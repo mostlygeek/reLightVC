@@ -12,7 +12,7 @@ Todo List Before reLightVC is Useful
 ------------------------------------
 
 To Do
-~~~~~~~~
+~~~~~
 
 * Refactor the AppController / AppView classes
 ** It's 2011, include() or require() is so 2009
@@ -32,6 +32,7 @@ To Do
 * make it so static pages can be referenced like, http://domain.tld/about
 ** basic remove the http://domain.tld/page/about requirement
 ** also make page/home.php to page/default.php
+
 
 Done, but probably buggy
 ~~~~~~~~~~~~~~~~~~~~~~~~
