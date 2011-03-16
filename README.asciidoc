@@ -15,7 +15,6 @@ To Do
 ~~~~~
 
 * Refactor the AppController / AppView classes
-** It's 2011, include() or require() is so 2009
 * create a JSON only Controller
 * add in PHPUnit tests for all parts
 ** includes making a base class for testing the framework
@@ -33,10 +32,15 @@ To Do
 ** basic remove the http://domain.tld/page/about requirement
 ** also make page/home.php to page/default.php
 
+Possible ToDo
+~~~~~~~~~~~~~
+
+* lightweight clone of Zend's Request/Response singleton model
 
 Done, but probably buggy
 ~~~~~~~~~~~~~~~~~~~~~~~~
 * add in a class autoloader
+** It's 2011, include() or require() is so 2009
 * change routing so it does not expect url=? for rewriting
 ** rewrite everything to index.php, which can figure out what to use
 ** a real front controller pattern
