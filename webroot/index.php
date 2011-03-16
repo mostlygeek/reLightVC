@@ -9,6 +9,7 @@ try {
     $fc = new Lvc_FrontController();
     $fc->addRouter(new Lvc_RegexRewriteRouter($regexRoutes));
     $fc->processRequest(new Lvc_HttpRequest());
+    
 } catch (Lvc_Exception $e) {
 
     // Log the error message
