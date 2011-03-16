@@ -27,7 +27,7 @@ class Lvc_FrontController {
      * @return void
      * @author Anthony Bush
      * */
-    public function addRouter(Lvc_RouterInterface $router) {
+    public function addRouter(Lvc_Router_Interface $router) {
         $this->routers[] = $router;
     }
 

@@ -7,12 +7,24 @@ since 2008.
 
 The planned changes for reLightVC are: 
 
-- add in a class autoloader
--- It's 2011, include() or require() is so 2009
-- create a JSON only Controller 
-- add in PHPUnit tests for all parts
--- includes making a base class for testing the framework
-- redo the configuration system 
--- maybe Documentation as Code type parser
-- add in a lightweight bootstrapping system
-- improve the documentation
+
+Todo List Before reLightVC is Useful
+------------------------------------
+
+To Do
+~~~~~~~~
+
+* add in a class autoloader
+* Refactor the AppController / AppView classes
+** It's 2011, include() or require() is so 2009
+* create a JSON only Controller
+* add in PHPUnit tests for all parts
+** includes making a base class for testing the framework
+* redo the configuration system
+** maybe Documentation as Code type parser
+* add in a lightweight bootstrapping system
+* improve the documentation
+* change default layout to HTML5 (boilerplate?)
+
+Done
+~~~~

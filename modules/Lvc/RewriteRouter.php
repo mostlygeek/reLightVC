@@ -13,7 +13,7 @@
  * @author Anthony Bush
  * @since 2007-04-22
  * */
-class Lvc_RewriteRouter implements Lvc_RouterInterface {
+class Lvc_RewriteRouter implements Lvc_Router_Interface {
 
     /**
      * Attempts to route a request using the GET value for the 'url' key, which

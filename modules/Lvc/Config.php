@@ -1,11 +1,13 @@
 <?php
+
 /**
  * Configuration class for the LVC suite of classes.
  *
  * @package lightvc
  * @author Anthony Bush
  * @since 2007-04-20
- * */
+ *
+ */
 class Lvc_Config {
 
     protected static $controllerPaths = array();
@@ -28,7 +30,6 @@ class Lvc_Config {
      * @var boolean
      * */
     protected static $sendActionParamsAsArray = false;
-
     // These may be moved into some sort of routing thing later. For now:
     /**
      * The controller name to use if no controller name can be gathered from the request.

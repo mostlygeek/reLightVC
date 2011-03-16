@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Routes a request using mod_rewrite data and regular expressions specified by
  * the LightVC user.
@@ -9,7 +10,7 @@
  * @author Anthony Bush
  * @since 2007-05-08
  * */
-class Lvc_RegexRewriteRouter implements Lvc_RouterInterface {
+class Lvc_RegexRewriteRouter implements Lvc_Router_Interface {
 
     protected $routes = array();
 
@@ -102,11 +103,9 @@ class Lvc_RegexRewriteRouter implements Lvc_RouterInterface {
 
             // Use mod_rewrite's url
             $url = $params['get']['url'];
-
             $matches = array();
             foreach ($this->routes as $regex => $parsingInfo) {
                 if (preg_match($regex, $url, $matches)) {
-
                     // Check for redirect action first
                     if (isset($parsingInfo['redirect'])) {
                         $redirectUrl = preg_replace($regex, $parsingInfo['redirect'], $url);
