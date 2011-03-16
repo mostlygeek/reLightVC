@@ -24,11 +24,7 @@ To Do
 * add in a lightweight bootstrapping system
 * improve the documentation
 * change default layout to HTML5 (boilerplate?)
-* change routing so it does not expect url=? for rewriting
-** rewrite everything to index.php, which can figure out what to use
-** a real front controller pattern
 * make sure rewriting to use index.php works with apache
-* make sure rewriting to use index.php works with NGINX + php fpm
 * change the HttpRequest->getParams() to not create a get, post, files array
 ** i don't see much value in doing it this way. it is fine to just pull from $_REQUEST
 ** this means updating all the $params['get'], $params['post'], $params['files'] code everywhere... :\
@@ -37,3 +33,7 @@ To Do
 Done, but probably buggy
 ~~~~~~~~~~~~~~~~~~~~~~~~
 * add in a class autoloader
+* change routing so it does not expect url=? for rewriting
+** rewrite everything to index.php, which can figure out what to use
+** a real front controller pattern
+* make sure rewriting to use index.php works with NGINX + php fpm
