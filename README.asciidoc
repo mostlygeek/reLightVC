@@ -18,8 +18,6 @@ To Do
 * create a JSON only Controller
 * add in PHPUnit tests for all parts
 ** includes making a base class for testing the framework
-* redo the configuration system
-** maybe Documentation as Code type parser
 * add in a lightweight bootstrapping system
 * improve the documentation
 * change default layout to HTML5 (boilerplate?)
@@ -31,6 +29,11 @@ To Do
 * make it so static pages can be referenced like, http://domain.tld/about
 ** basic remove the http://domain.tld/page/about requirement
 ** also make page/home.php to page/default.php
+* redo the configuration system
+** YAML based, builds an array hierarchy
+** Add in a caching layer, parse once, using APC Cache
+* Add in environment modes: Default, Development, Production, Testing
+** config system should have an easy way of separating each environment
 
 Possible ToDo
 ~~~~~~~~~~~~~
