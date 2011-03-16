@@ -7,6 +7,7 @@ try {
 
     // Process the HTTP request using only the routers we need for this application.
     $fc = new Lvc_FrontController();
+
     $fc->addRouter(new Lvc_RegexRewriteRouter($regexRoutes));
     $fc->processRequest(new Lvc_HttpRequest());
     

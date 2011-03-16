@@ -22,11 +22,6 @@ class Lvc_HttpRequest extends Lvc_Request {
             $params['get'] = array();
         }
 
-        // Ensure that we have some mode_rewritten url.
-        if (!isset($params['get']['url'])) {
-            $params['get']['url'] = '';
-        }
-
         // Save POST data
         $params['post'] = & $_POST;
 
@@ -74,6 +69,16 @@ class Lvc_HttpRequest extends Lvc_Request {
         } else {
             return parent::getAdditionalErrorInfo();
         }
+    }
+
+    /**
+     * Returns the requested path
+     * 
+     * @return string
+     */
+    public function getPath()
+    {
+        return parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     }
 
 }

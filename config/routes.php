@@ -2,8 +2,8 @@
 
 // Format of regex => parseInfo
 $regexRoutes = array(
-    // Map nothing to the home page.
-    '#^$#' => array(
+    // no path goes to the homepage
+    '#^/$#' => array(
         'controller' => 'page',
         'action' => 'view',
         'action_params' => array(
@@ -11,7 +11,7 @@ $regexRoutes = array(
         ),
     ),
     // Allow direct access to all pages via a "/page/page_name" URL.
-    '#^page/(.*)$#' => array(
+    '#^/page/(.*)$#' => array(
         'controller' => 'page',
         'action' => 'view',
         'action_params' => array(
@@ -19,7 +19,7 @@ $regexRoutes = array(
         ),
     ),
     // Map controller/action/params
-    '#^([^/]+)/([^/]+)/?(.*)$#' => array(
+    '#^/([^/]+)/([^/]+)/?(.*)$#' => array(
         'controller' => 1,
         'action' => 2,
         'additional_params' => 3,
@@ -27,7 +27,7 @@ $regexRoutes = array(
     // Map controllers to a default action (not needed if you use the
     // Lvc_Config static setters for default controller name, action
     // name, and action params.)
-    '#^([^/]+)/?$#' => array(
+    '#^/([^/]+)/?$#' => array(
         'controller' => 1,
         'action' => 'index',
     ),

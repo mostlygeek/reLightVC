@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * @todo remove this. Not really neccessary?
+ */
 class AppController extends Lvc_PageController
 {
 
