@@ -29,6 +29,9 @@ To Do
 ** i don't see much value in doing it this way. it is fine to just pull from $_REQUEST
 ** this means updating all the $params['get'], $params['post'], $params['files'] code everywhere... :\
 * get rid of all the @ that hide warnings, notices and errors
+* make it so static pages can be referenced like, http://domain.tld/about
+** basic remove the http://domain.tld/page/about requirement
+** also make page/home.php to page/default.php
 
 Done, but probably buggy
 ~~~~~~~~~~~~~~~~~~~~~~~~
